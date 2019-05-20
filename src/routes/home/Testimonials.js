@@ -29,7 +29,7 @@ const Testimonials = () =>{
                       </div>
                     </div>
                     <div className="item carousel-item">
-                      <div className="img-box"><img src="./images/test2.jpg" alt="" /></div>
+                      <div className="img-box"><img src="./images/Test2.jpg" alt="" /></div>
                       <p className="title"><b>“Loyal 3 years +”</b></p>		
                       <p className="testimonial">I signed up for the Unlimited membership last month and am LOVING it! I swap out my pieces a bunch of times a month and keep getting compliments from my co workers on how well dressed I am.</p>
                       <p className="overview"><b>Mark&nbsp;R</b></p>
