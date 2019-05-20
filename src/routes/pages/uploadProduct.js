@@ -1,9 +1,8 @@
 import React, {Component} from 'react';
 import { Redirect } from 'react-router-dom';
 import { uploadProductDetails } from '../../helpers/network';
-import { saveUser } from '../../helpers/authentication';
 import Layout from '../../components/Layout';
-import { userLogout } from '../../helpers/authentication';
+import { userLogout, isLoggedIn } from '../../helpers/authentication';
 
  class UploadProduct extends Component { 
   state = {
@@ -21,7 +20,7 @@ import { userLogout } from '../../helpers/authentication';
       error: null
     })
     try {
-      let response = await uploadProductDetails({
+      await uploadProductDetails({
           rentAmount   : this.state.rentAmount,
           productName  : this.state.productName,
           company      : this.state.company,
@@ -31,7 +30,7 @@ import { userLogout } from '../../helpers/authentication';
           other        : this.state.other,
           rentierName  : this.state.rentierName,
           rentierEmail  : this.state.rentierEmail});
-      saveUser(response);
+      //saveUser(response);
       this.setState({
         authenticated: true
       });
@@ -48,7 +47,7 @@ import { userLogout } from '../../helpers/authentication';
   render(){
   return  <>
   <Layout />
-    {this.state.authenticated === false && this.state.error === true? <Redirect to="/users/login/" /> : null}
+    {isLoggedIn()? null : <Redirect to="/login" />}
     
     <section id="register" className="align-items-center col-md-6  card-body ">
         <h2>Please Enter The Product Details</h2>
