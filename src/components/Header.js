@@ -21,13 +21,13 @@ class Header extends Component {
       <div className="collapse navbar-collapse" id="navbarResponsive">
       <ul className="navbar-nav mr-auto">
         {/*<li className="nav-item">
-          <a className="nav-link js-scroll-trigger text-white" activeClassName="active"  href="/#home">Home</a>
+          <a className="nav-link js-scroll-trigger text-white" href="/#home">Home</a>
         </li>*/}
         <li className="nav-item">
-          <a className="nav-link js-scroll-trigger text-white" activeClassName="active" offset="125px" href="/#about">About Us</a>
+          <a className="nav-link js-scroll-trigger text-white" href="/#about">About Us</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link js-scroll-trigger text-white" activeClassName="active"  href="/#contact">Contact Us</a>
+          <a className="nav-link js-scroll-trigger text-white" href="/#contact">Contact Us</a>
         </li>
        
       </ul>
