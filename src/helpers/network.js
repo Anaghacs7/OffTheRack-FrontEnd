@@ -83,10 +83,10 @@ function getInquiries(){
       if (!response.ok){
         reject(new Error("Unathorized"));
         return;
-      }
+      }else{
       response.json().then(json => {
         resolve(json); console.log(json);
-      }).catch(e => reject(e));
+      }).catch(e => reject(e));}
     }).catch(err => reject(err))
   })
  

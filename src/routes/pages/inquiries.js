@@ -37,13 +37,11 @@ import {isLoggedIn } from '../../helpers/authentication';
    }
    async componentDidMount(){
      try {
-       if(isLoggedIn()){
        const response = await getInquiries();
        this.setState({
          data: response,
          authenticated: true
        });
-      }
      }catch(e){
        userLogout();
        this.setState({
@@ -57,8 +55,7 @@ import {isLoggedIn } from '../../helpers/authentication';
      return (
        <>
        <Layout />
-         {this.state.authenticated === false || this.state.error === true ? <Redirect to="/login" /> : null}
-         {this.state.authenticated === true && this.state.error === false ? <Table data={this.state.data}/> : null}
+         {isLoggedIn() ? <Table data={this.state.data}/> : <Redirect to="/login" />}
        </>
      );
    }
