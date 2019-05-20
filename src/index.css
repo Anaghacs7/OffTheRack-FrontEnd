@@ -3,6 +3,8 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-business-frontpage/blob/master/LICENSE)
  */
+ 
+ .anchor { padding-top: 90px; }
  .mynavbar-brand {
     display: inline-block;
     padding-top: .3125rem;

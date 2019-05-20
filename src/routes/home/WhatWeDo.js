@@ -1,7 +1,7 @@
 import React from 'react';
 
 const WhatWeDo = () =>{
-return <div className="container">
+return <div className="anchor container">
 <section id="whatwedo" />
 
   <h2>What We Do</h2>

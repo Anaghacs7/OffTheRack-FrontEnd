@@ -2,7 +2,7 @@ import React from 'react';
 
 const Testimonials = () =>{
           return (
-            <div className="container">
+            <div className="anchor container">
               <section id="testimonals">
                 <h2>Testimonials</h2>
                 <hr />

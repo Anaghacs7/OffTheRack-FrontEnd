@@ -3,7 +3,7 @@ import React from 'react';
 const AboutUs = () =>{
     
     return (<div id="about1">
-    <div className="container" id="about">
+    <div className="anchor container" id="about">
     
      <section /> 
         <h2>About Us</h2>
