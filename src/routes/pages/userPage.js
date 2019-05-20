@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Layout from '../../components/Layout';
 import { Redirect } from 'react-router-dom';
 import {getProductDetails} from '../../helpers/network';
-import { userLogout } from '../../helpers/authentication';
+import { userLogout, isLoggedIn } from '../../helpers/authentication';
  
 // const Loading = (props) => {
  //  return <div className="alert alert-info" role="alert">
@@ -72,8 +72,7 @@ class UserPage extends Component {
     return (<>
     <Layout />
         <br/>
-        {this.state.authenticated === false && this.state.error === true ? <Redirect to="/users/login" /> : null}
-        {this.state.authenticated === true && this.state.error === false ? <AllProducts data={this.state.data} /> : null}
+        {isLoggedIn() ? <AllProducts data={this.state.data} /> : <Redirect to="/login" />}
       </>
     );
   }
