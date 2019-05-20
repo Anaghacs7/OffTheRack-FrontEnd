@@ -9,7 +9,7 @@ return <div className="container">
   <div className="row">
     <div className="col-md-4 mb-5">
       <div className="card h-100">
-        <img className="card-img-top" src="./images/phone.png" alt="" height={240} />
+        <img className="card-img-top" src="/images/phone.png" alt="" height={240} />
         <div className="card-body" style={{backgroundColor : 'rgb(255, 228, 204)'}} >
           <h4 className="card-title" align="center">Rent In</h4>
           <p className="card-text" align="center">Rent clothes, accessories and even footwear from people in our community</p>

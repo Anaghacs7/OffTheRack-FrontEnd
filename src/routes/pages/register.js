@@ -34,8 +34,10 @@ import Layout from '../../components/Layout';
   }
   
   render(){
-  return   <Layout>
-   {this.state.areregistered ? <Redirect to="/success/"/> : null}
+  return <>
+  <Layout />
+  <header className="bg-hero " content="width=device-width, initial-scale=1, shrink-to-fit=no" style={ { backgroundImage: `url(require("./images/HOMEPAGE.jpg"))` } }>
+   {this.state.areregistered ? <Redirect to="/success"/> : null}
    <section id="register" className="col-md-4 RegisterForm card-body align-items-center">
       <h2>Register Here</h2>
       <hr />  
@@ -64,11 +66,10 @@ import Layout from '../../components/Layout';
     
     </form>
      
-    </section>   
-    </Layout>
+    </section>
+    </header> 
+    </> 
 
-    
-    
  }
    
  

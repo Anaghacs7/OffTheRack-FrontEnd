@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-
+import Header from './Header';
 class Layout extends Component {
   render(){
-    return  <header className="bg-hero " content="width=device-width, initial-scale=1, shrink-to-fit=no" style={ { backgroundImage: `url(require("./images/HOMEPAGE.jpg"))` } }>
+    return <>
+    <Header />
     <div className="container shrink-to-fit=no " >
     {this.props.children}
     </div>
-    </header>
-  }
+    </>
+  } 
 }
 export default Layout;

@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutUs = () =>{
     
-    return (
+    return (<div id="about1">
     <div className="container" id="about">
     
      <section /> 
@@ -10,7 +10,7 @@ const AboutUs = () =>{
         <hr />
         <p>A community of people with the same interests. Fashion.</p>
         <p>Users are able to rent clothes and accessories from eachother, whether you have a special occasion, want to test out a product before you buy it or a simple closet change. We connect you to the perfect product.</p>
-      </div> 
+      </div> </div>
       //&nbsp;
     );  
     

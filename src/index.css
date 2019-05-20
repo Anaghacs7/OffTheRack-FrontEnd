@@ -3,15 +3,29 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-business-frontpage/blob/master/LICENSE)
  */
-
+ .mynavbar-brand {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 2rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
  .RegisterForm {
-	margin-right: 0.5in;
-	margin-left: 8.5in;
+	margin-right: 350px;
+	margin-left: 350px;
 	margin-top: 0in;
 	margin-bottom: 0in;
 	/*align-self: auto;*/
  }
+ .cardMargin{
+	 margin-top:15px; 
+	 margin-bottom: 15px;
+ }
  #BrandName{
 	 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	 font-size: large;
+	 color: rgba(0,0,0,.9);
+	 font-weight: bold;
  }
